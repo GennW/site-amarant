@@ -6,7 +6,7 @@
     }
 
     .contact-phone {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .logo img {
@@ -90,23 +90,7 @@
 
 /* 656px */
 @media screen and (max-width: 656px) {
-    .map-container {
-        position: relative;
-        width: 100%;
-        padding-top: 56.25%; /* соотношение 16:9 */
-    }
-
-    .map-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-    }
-    .map-container {
-        padding-top: 75%; /* соотношение 4:3 для меньшего размера */
-    }
+    
     .tour img {
         width: 100%;
        }
@@ -121,6 +105,27 @@
     .production-img img {
         width: 100%;
     }
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+
+    .right {
+        order: 3;
+    }
+
+    .logo {
+        order: 1; 
+    }
+
+    .delivery {
+        order: 2; 
+    }
+    .slider {
+        height: 452px;
+    }
+
 }
 
 /* 375 - 424 */
@@ -173,23 +178,7 @@
         left: 20px;
     }
 
-    .footer-container {
-        flex-direction: column;
-        gap: 15px;
-        
-    }
 
-    .right {
-        order: 3; /* Устанавливаем порядок для блока right */
-    }
-
-    .logo {
-        order: 1; /* Устанавливаем порядок для блока logo */
-    }
-
-    .delivery {
-        order: 2; /* Устанавливаем порядок для блока delivery */
-    }
 }
 
 /* 320-374 */

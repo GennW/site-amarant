@@ -3,13 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
-h1, h2 {
+
+h1,
+h2 {
     text-transform: uppercase;
 
 }
+
 @font-face {
     font-family: Muller;
     src: url('../fonts/MullerRegular.otf');
@@ -44,7 +48,7 @@ body {
 }
 
 .contact-phone {
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 
@@ -91,7 +95,7 @@ body {
 }
 
 .menu-item a:hover::before,
-.menu-item a:focus::before, 
+.menu-item a:focus::before,
 .menu-item a:active::before {
     width: 100%;
     transition: width 0.3s ease;
@@ -102,14 +106,16 @@ body {
     justify-items: center;
     gap: 10px;
 }
+
 .delivery-text {
     color: #060;
     font-weight: bold;
     margin-right: 5px;
 }
+
 .contact-phone {
     text-decoration: none;
-    color:#990033;
+    color: #990033;
     font-weight: bold;
     font-size: 22px;
 }
@@ -117,9 +123,11 @@ body {
 .social a:first-child {
     margin-right: 10px;
 }
+
 .burrgerr {
     display: none;
 }
+
 .close {
     display: none;
 }
@@ -127,8 +135,8 @@ body {
 
 /* about */
 .about {
-    margin-bottom: 80px;
-    margin-top: 50px;
+    margin-bottom: 30px;
+    /* margin-top: 50px; */
     padding: 20px 0 20px;
     background-color: #F5F5F7;
 
@@ -139,31 +147,26 @@ body {
     text-align: center;
 }
 
-.about h2 {
-
-}
 
 .green-color {
     color: #060;
 }
-.about-text-wrapper {
-    
 
-}
 .about-text-main {
     display: grid;
     gap: 15px;
     margin-bottom: 30px;
 }
+
 .about-text {
     font-weight: bold;
 }
-.about-text-comments {
-}
+
 .about-text-comment {
     font-size: 12px;
     color: #666;
 }
+
 .text-color-brown {
     color: #990033;
     font-weight: bold;
@@ -172,7 +175,7 @@ body {
 }
 
 .section-img {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .about-img {
@@ -180,6 +183,7 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+
 .about-img img:first-child {
     margin-right: 10px;
 }
@@ -189,26 +193,27 @@ body {
 .production {
     background-color: #F5F5F7;
     padding: 20px 0 20px;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.production-about {
-}
+.production-about {}
+
 .production-about h2 {
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
 
 }
-.production-text-wrapper {
-}
+
+.production-text-wrapper {}
+
 .production-text {
     display: grid;
     gap: 15px;
     margin-bottom: 30px;
     font-weight: bold;
-    
+
 }
 
 .production-text li {
@@ -218,11 +223,13 @@ body {
 .production-text p span {
     text-transform: uppercase;
 }
+
 .section-img h2 {
     margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     text-align: center;
 }
+
 .production-img {
     display: flex;
     flex-wrap: wrap;
@@ -231,37 +238,46 @@ body {
     gap: 10px;
 }
 
+.production.bg-white {
+    background: #ffffff;
+    margin-bottom: 0;
+}
 
 /* slider */
 
 .slider-products {
-    margin-top: 50px;
-    margin-bottom: 80px;
+    padding-top: 20px;
+    background: #F5F5F7;
 }
+
+
 .slider-products h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .slider {
     position: relative;
     display: flex;
     overflow: hidden;
-    width: 100%; 
+    width: 100%;
     height: 750px;
 }
 
 .slide {
-    flex: 0 0 33.33%; /* Равная ширина для каждого слайда */
+    flex: 0 0 33.33%;
+    /* Равная ширина для каждого слайда */
     /* transition: transform 0.5s ease; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; 
+    /* background-color: #f0f0f0; */
     text-align: center;
 }
 
 .active {
-    transform: translateX(0); /* Начальное положение активного слайда */
+    transform: translateX(0);
+    /* Начальное положение активного слайда */
 }
 
 
@@ -283,23 +299,30 @@ body {
     cursor: pointer;
 }
 
+button {
+    background-color: #660033a8;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: #ffffffa8;
+}
 
 button:hover .arrow-icons {
-    fill: #660033; 
+    fill: #660033;
 }
 
 .slide {
-    display: none; /* Скрываем все слайды */
+    display: none;
+    /* Скрываем все слайды */
 }
 
 .slide.active {
-    display: flex; /* Показываем только активный слайд */
+    display: flex;
+    /* Показываем только активный слайд */
 }
 
-button {
-    background-color: rgba(255, 255, 255, 0.428);
-    border-radius: 50%;
-}
+
 
 
 .production-text-wrapper.tour {
@@ -308,9 +331,11 @@ button {
     align-items: center;
     justify-content: center;
 }
+
 .map {
     margin-top: 50px;
 }
+
 .map p {
     text-align: center;
     font-size: 20px;
@@ -318,10 +343,15 @@ button {
     margin-bottom: 20px;
 }
 
+.map {
+    width: 100%;
+}
+
 /* footer */
 .footer {
     padding: 20px 0 20px;
 }
+
 .footer-container {
     display: flex;
     align-items: center;
@@ -335,6 +365,7 @@ button {
     flex-direction: column;
     align-items: center;
 }
+
 .info-company {
     margin-top: 15px;
     font-size: 12px;
@@ -349,5 +380,3 @@ button {
 .right p {
     margin-right: 5px;
 }
-
-
