@@ -178,6 +178,21 @@
         left: 20px;
     }
 
+    .production-types {
+        display: block;
+        text-align: left;       
+    }
+    .production-types ul li {
+        text-align: left;
+    }
+    .production-types .green-color {
+        text-align: left;
+        
+    }
+    .production-types ul:first-child {
+        margin-bottom: 20px;
+    }
+
 
 }
 
