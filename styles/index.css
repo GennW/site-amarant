@@ -218,15 +218,30 @@ body {
     text-transform: uppercase;
 }
 .production-text .green-color {
-    text-align: left;
+    /* text-align: left; */
     margin-bottom: 5px;
     margin-top: 0;
 }
+.production-types ul:first-child {
+    margin-right: 20px;
+    margin-right: 0;
+}
 .ml-10 {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .production-text h3 {
     text-align: center;
+}
+.production-types ul li {
+    text-align: center;
+    white-space: nowrap;
+}
+.production-types {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
 .section-img h2 {
     margin-top: 50px;
