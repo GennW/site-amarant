@@ -12,7 +12,6 @@
     .logo img {
         width: 100%;
     }
- 
 }
 
 /* 768 - 1020 */
@@ -30,10 +29,8 @@
         gap: 20px;
     }
     .production-img {
-        
         gap: 20px;
     }
-
 }
 
 /* 425 - 767 */
@@ -52,6 +49,20 @@
         max-width: 390px;
         gap: 10px;
     }
+    /* .header.shrink .delivery > *:nth-child(1),
+    .header.shrink .delivery > *:nth-child(2) {
+        display: none; 
+    }
+    .header .container > *:nth-child(3){
+        display: none; 
+    } */
+    .header {
+        position: unset;
+    }
+
+    .about {
+        margin-top: unset;
+    }
 
     .menu {
         order: 2;
@@ -65,38 +76,32 @@
 
     .slide {
         flex: 0 0 100%; /* Равная ширина для каждого слайда */
-        
     }
 
-   .right {
-    display: grid;
-    gap: 5px;
-   }
+    .right {
+        display: grid;
+        gap: 5px;
+    }
 
     .slider-navigation button {
         transform: scale(0.8);
     }
     button .arrow-icons {
-        fill: #4b0026; 
+        fill: #4b0026;
     }
     .tour img {
         width: 500px;
-       }
-
+    }
 }
-
-
-
 
 /* 656px */
 @media screen and (max-width: 656px) {
-    
     .tour img {
         width: 100%;
-       }
+    }
 
-       button .arrow-icons {
-        fill: #ffffff; 
+    button .arrow-icons {
+        fill: #ffffff;
     }
     .slide img {
         width: 100%;
@@ -108,7 +113,6 @@
     .footer-container {
         flex-direction: column;
         gap: 15px;
-        
     }
 
     .right {
@@ -116,21 +120,19 @@
     }
 
     .logo {
-        order: 1; 
+        order: 1;
     }
 
     .delivery {
-        order: 2; 
+        order: 2;
     }
     .slider {
         height: 452px;
     }
-
 }
 
 /* 375 - 424 */
 @media screen and (max-width: 424px) {
-   
     .slider-navigation button {
         transform: scale(0.5);
     }
@@ -180,20 +182,17 @@
 
     .production-types {
         display: block;
-        text-align: left;       
+        text-align: left;
     }
     .production-types ul li {
         text-align: left;
     }
     .production-types .green-color {
         text-align: left;
-        
     }
     .production-types ul:first-child {
         margin-bottom: 20px;
     }
-
-
 }
 
 /* 320-379 */

@@ -39,6 +39,58 @@ body {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
     padding: 16px 0 15px;
+    position: fixed; /* Фиксируем хедер */
+    top: 0;
+    width: 100%;
+    transition: padding 0.3s ease; /* Плавный переход */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Плавные переходы для opacity и transform */
+    z-index: 1000; /* Чтобы хедер был выше других элементов */
+    opacity: 1; /* Начальная непрозрачность */
+    transform: translateY(0); /* Начальная позиция */
+}
+
+.header.shrink {
+    padding: 10px 0 10px; /* Уменьшаем высоту хедера */
+}
+.logo {
+    display: flex; /* Включаем flexbox */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    height: 100px; /* Фиксированная высота блока */
+    transition: height 0.3s ease; /* Плавный переход для высоты */
+}
+.logo,
+.logo img,
+.contact-phone,
+.delivery {
+    transition: transform 0.3s ease; /* Плавный переход для изменения размера */
+}
+.header .contact-phone {
+    transition: font-size 0.6s ease, transform 0.6s ease; /* Плавный переход для изменения размера */
+}
+
+.header.shrink .logo img {
+    transform: scale(0.6); /* Уменьшаем логотип до 80% */
+}
+.header.shrink .logo {
+    height: 60px;
+}
+
+.header.shrink .delivery {
+    gap: 5px;
+}
+
+.header.shrink .contact-phone {
+    font-size: 20px;
+}
+
+.header.shrink .delivery > *:last-child {
+    display: none; /* Скрываем последний элемент */
+}
+
+.header.hidden {
+    opacity: 0; /* Скрываем хедер */
+    transform: translateY(-100%); /* Сдвигаем вверх */
+    pointer-events: none; /* Игнорируем события мыши */
 }
 
 .container {
@@ -132,7 +184,7 @@ body {
 /* about */
 .about {
     margin-bottom: 30px;
-    /* margin-top: 50px; */
+    margin-top: 133px;
     padding: 20px 0 20px;
     background-color: #f5f5f7;
 }

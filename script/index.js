@@ -42,3 +42,22 @@ const currentYear = new Date().getFullYear();
 if (yaerElement) {
     yaerElement.textContent = currentYear;
 }
+
+
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    
+    if (window.scrollY > 0) {
+        header.classList.add('shrink');
+    } else {
+        header.classList.remove('shrink');
+    }
+     // Проверка, достигнут ли конец страницы
+     if (scrollPosition >= documentHeight) {
+        header.classList.add('hidden'); // Скрываем хедер
+    } else {
+        header.classList.remove('hidden'); // Показываем хедер
+    }
+});
